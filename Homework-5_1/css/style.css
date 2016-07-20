@@ -1,0 +1,143 @@
+  @font-face {
+    font-family: 'helvetic';
+    src: url('../font/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../font/helveticaneuecyr-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body, html {
+    width: 100%;
+    font-family: 'Helvetica Neue', Arial;
+    background: url(../img/background.png) center no-repeat;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    background: #085291;
+  }
+  
+  .head_menu ul{
+    text-align: right;
+    font-size: 0;
+  }
+  
+  .head_menu ul li {
+    display: inline-block;
+    font-size: 15px;
+  }
+  
+  .head_menu ul li a {
+    display: inline-block;
+    color: #60b5ed;
+    padding: 0px 15px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+  
+  .head_menu ul li a:hover {
+    background: linear-gradient(to bottom, rgba(80,176,220,1) 0%, rgba(46,121,196,1) 100%);
+    color: white;
+  }
+  
+  .name a:before {
+    content: url(../img/flag.png);
+    display: inline-block;
+    height: 16px;
+    vertical-align: -6px;
+  }
+  
+  .head_menu ul li.name {
+    border-left: 1px solid #4eabda;
+  }
+  
+  .head_menu ul li.name a, .head_menu ul li.sign_in a {
+    color: white;
+  }
+  
+  main {
+    position: relative;
+    display: flex;
+    min-height: 93vh;
+  }
+  
+  .main_menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 515px;
+    margin: auto;
+    color: rgba(255,255,255,.8);
+    text-align: center;
+  }
+  
+  .main_head {
+    background: rgba(0,0,0,.6);
+    padding: 15px 100px;
+    margin-bottom: 4px;
+  }
+  
+  .main_center {
+    background: rgba(0,0,0,.6);
+    padding: 20px 100px;
+    margin-bottom: 3px;
+  }
+  
+  .fb{
+    margin: 0 auto;
+    width: 274px;
+    padding: 10px 0 20px;
+  }
+  
+  .ou:before, .ou:after {
+    content: url(../img/ou.png);
+  }
+  
+  input[type="text"], [type="email"], [type="password"] {
+    display: block;
+    margin: 10px auto;
+    width: 275px;
+    height: 35px;
+    background: #0f0f0f;
+    border: none;
+    box-shadow: 1px 1px 1px gray;
+    padding: 1px 18px;
+    box-sizing: border-box;
+    color: rgb( 255, 251, 251 );
+  }
+  
+  input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    width: 148px;
+    height: 34px;
+    background: url(../img/button.png);
+    text-align: center;
+    border: none;
+    color: rgb( 255, 251, 251 );
+  }
+  
+  input[type="text"]:focus, [type="email"]:focus, [type="password"]:focus {
+    background: #1b5288;
+    color: rgb( 255, 251, 251 );;
+    border: #699bcd;
+    box-shadow: 3px 3px 15px #699bcd, -3px -3px 15px #699bcd ;
+  }
+  
+  .checkbox {
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+  }
+  
+  .footer {
+    font-size: 10px;
+  }
