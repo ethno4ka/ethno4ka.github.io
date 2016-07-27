@@ -8,8 +8,17 @@
   
   body, html {
     width: 100%;
+    height: 100%;
     font-family: 'Helvetica Neue', Arial;
     background: url(../img/background.png) center no-repeat;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   ul {
@@ -17,6 +26,10 @@
   }
   
   header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     background: #085291;
@@ -58,12 +71,6 @@
   
   .head_menu ul li.name a, .head_menu ul li.sign_in a {
     color: white;
-  }
-  
-  main {
-    position: relative;
-    display: flex;
-    min-height: 93vh;
   }
   
   .main_menu {
