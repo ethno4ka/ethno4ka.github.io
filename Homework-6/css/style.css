@@ -528,6 +528,19 @@
     height: 626px;
     background: linear-gradient(to top, #93a7b0, #e5e7e8);
     display: inline-block;
+    margin-top: -1px;
+  }
+
+  .block-1-wheels {
+    margin-top: 12px;
+  }
+
+  .block-2-wheels {
+    margin-top: 24px
+  }
+
+  .block-3-wheels {
+    margin-top: 26px;
   }
 
   .no-before:before{
@@ -536,21 +549,20 @@
 
   .item{
     text-align: center;
-    width: 110px;
+    width: 125px;
     display: inline-block;
-    margin: 0 30px 0px 0px;
-    padding: 0px 0px 0px 24px;
+    margin: 0 20px 0 0;
+    padding: 0 0 0 20px;
   }
 
   .p-img{
-    width: 137px;
-    height: 127px;
+    width: 136px;
+    height: 126px;
     background-color: white;
     border: 1px solid #a7b1b4;
     border-radius: 10px;
-    margin-top: -3px;
-    margin-bottom: 6px;
-    margin-left: 13px;
+    margin-bottom: 2px;
+    margin-left: 3px;
   }
 
   .p-img img {
@@ -563,55 +575,78 @@
     font-family: Arial, "Lucida Sans Unicode";
     font-size: 14px;
     font-weight: 600;
+    margin-left: 20px;
   }
 
   .second-title{
     font-family: Arial, "Lucida Sans Unicode";
-    font-size: 14px;
+    font-size: 12px;
+    margin-left: 12px;
   }
 
   .item figcaption{
     font-family: Arial, "Lucida Sans Unicode";
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     font-style: italic;
     color: #114165;
+    margin-left: 35px;
   }
 
-  .foot-img{
-    line-height: 90px;
-    text-align: center;
+  .brands {
+    width: 678px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto;
   }
 
-  .foot-img img{
-    vertical-align: middle;
+  .brands a {
+    display: block;
   }
 
   footer {
-    width: 913px;
+    width: 100%;
     height: 100px;
+    display: inline-flex;
+    align-content: flex-start;
+    flex-flow: column;
+    padding-top: 12px;
     background-color: #213a4d;
-    text-align: center;
+    border-top: 1px solid #242c3e;
+    border-right: 1px solid #242a3c;
+    border-left: 1px solid #223346;
     font-family: Arial, "Lucida Sans Unicode";
   }
 
-  .foot-link{
-    color: #bec6c9;
-    padding-top: 10px;
-    font-size: 14px;
+  footer .links {
+    margin: 0 auto;
   }
 
-  .foot-link a{
+  ul {
+    list-style: none;
+  }
+
+  footer li {
+    float: left;
+    margin: 0px auto;
+    padding: 0px 12px;
+    border-right: 1px solid #7a878f;
+  }
+
+  footer li:first-child {
+    border-left: none;
+  }
+
+  footer a {
+    color: #bec6c9;
+    display: block;
+    font-size: 12px;
     text-decoration: none;
-    color: #bec6c9;
-  }
-
-  .foot-link a:hover{
-    color: #52abcb;
   }
   
-  .copyright{
+  footer div {
+    margin: 12px auto;
     color: #7f4740;
-    font-size: 10px;
-    padding-top: 20px;
+    font-size: 11px;
   }
