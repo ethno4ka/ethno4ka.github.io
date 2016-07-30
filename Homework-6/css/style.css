@@ -351,173 +351,98 @@
     top: 100.989px;
   }
   
-  .left-menu{
+  .left_menu_C {
+    background-color: white;
     font-family: Arial, "Lucida Sans Unicode";
     font-size: 12px;
     font-weight: 600;
     width:190px;
     display: inline-block;
     float: left;
-  }
+}
 
-  .right-menu{
-    font-family: Arial, "Lucida Sans Unicode";
-    font-size: 12px;
-    font-weight: 600;
-    width:190px;
-    display: inline-block;
-    float: right;
-  }
+.katalog_l,
+.katalog_r {
+    border: 1px solid rgb( 121, 135, 141 );
+    border-radius: 15px;
+    box-shadow: 1.5px 2.598px 3px 0px rgb( 150, 150, 150 );
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode";
+    color: rgb( 17, 65, 101 );
+    width: 100%;
+    padding: 3px 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
 
-  .name-side-menu{
-    width: 149px;
-    height: 19px;
-    border: 1px solid #8b979c;
-    border-radius: 14px;
-    padding-left: 31px;
-    padding-top: 6px;
-    position: relative;
-    color: #114165;
-    box-shadow: 3px 3px 11px -5px #000;
-    margin-bottom: 13px;
-  }
+.katalog_l,
+.katalog_r img {
+    margin-right: 3px;
+}
 
-  span.catalog {
-    margin-left: -5px;
-    font-size: 13px;
-  }
+.icon {
+    border-radius: 50%;
+    background-image: -moz-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
 
-  .list-menu{
-    margin: 13px 0 13px 40px;
-    line-height: 10px;
-    color: #465961;
-    position: relative;
-  }
-
-  .list-menu:before{
-    position: absolute;
-    content: "";
+.katalog_l h2 {
     display: block;
-    width: 4px;
-    height: 4px;
-    border-radius: 5px;
-    border: 2px solid #465961;
-    left: -12px;
-    top: 1px;
-  }
+    margin: auto 0;
+}
 
-  .list-menu:hover{
-    color: #0c3256;
-    font-size: 13px;
-    font-style: italic;
-    text-decoration: underline;
-  }
+.list {
+  padding-left: 35px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
 
-  .list-menu:hover:before{
-    border: 3px solid #0c3256;
-  }
+.list li {
+  list-style-image: url(../img/marker-small.png);
+}
 
-  .no-before:hover:before{
-    border: hidden;
-  }
+.list a {
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode";
+    color: rgb(17, 65, 101);
+    line-height: 1.819;
+  color: #869095;
+  text-decoration: none;
+}
 
-  .checkbox {
-    width: 11px;
-    height: 11px;
-  }
+.list a:hover {
+  font-style: italic;
+  color: #0c3256;
+  text-decoration: underline;
+}
 
-  .checkbox + label {
-    cursor: pointer;
-  }
+.section {
+  width: 148px;
+    padding: 2px 0 2px 3px;
+  border: 1px solid #465961;
+  border-radius: 13px;
+  font: 13px Arial;
+  color: #114165;
+  box-shadow: 0px 2px 2px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
 
-  .checkbox:not(checked) {
-    position: absolute;
-    opacity: 0;
-  }
-
-  .checkbox:not(checked) + label {
-    position: relative;
-    padding: 0 0 0 20px;
-  }
-  
-  .checkbox:not(checked) + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 11px;
-    height: 11px;
-    background: white;
-    border-top: 1px solid #1c4360;
-    border-left: 1px solid #1c4360;
-    border-right: 1px solid #1c4360;
-    border-bottom: 1px solid #809aad;
-    box-shadow: inset 3px 3px 2px rgba(0,0,0,.4);
-  }
-
-  .checkbox:checked + label:before {
-    background: #383c5b;
-  }
-
-  .choose{
-    width: 82px;
-    height: 26px;
-    background: linear-gradient(to top, #0c3357, #236988);
-    border: hidden;
-    border-radius: 13px;
-    font-family: Arial, "Lucida Sans Unicode";
-    color: white;
-    font-size: 11px;
-    margin-left: 40px;
-    margin-top: 15px;
-  }
-
-  .choose:hover{
-    background: linear-gradient(to top, #236988, #0c3357);
-  }
-
-  .list-menu:nth-child(5n+1):hover{
-    color: #114165;
-    font-size: 12px;
-    font-style: normal;
-    text-decoration: none;
-  }
-
-  .list-menu:nth-child(5n+1){
-    position: relative;
-    width: 120px;
-    height: 18px;
-    border: 1px solid #8b979c;
-    border-radius: 14px;
-    padding-left: 32px;
-    padding-top: 9px;
-    color: #114165;
-    font-weight: 600;
-    margin-left: 3px;
-  }
-
-  .list-menu:nth-child(5n+1):before{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 14px;
-    height: 14px;
-    border-radius: 12px;
-    border: 5px solid #114165;
-    left: 2px;
-    top: 1px;
-  }
-
-  .name-side-menu:before{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 19px;
-    height: 19px;
-    border-radius: 12px;
-    background: url(../img/list.png) no-repeat 3px 3px, linear-gradient(to top, #236988, #0c3357);
-    left: 3px;
-    top: 2px;
-  }
+.section img {
+    margin-right: 3px;
+}
 
   main{
     margin-top: 18px;
@@ -592,6 +517,46 @@
     color: #114165;
     margin-left: 35px;
   }
+.right_menu_C {
+  background-color: white;
+  font-family: Arial, "Lucida Sans Unicode";
+  font-size: 12px;
+  font-weight: 600;
+  width:190px;
+  display: inline-block;
+  float: right; 
+}
+
+.check {
+  margin: 12px 0 16px 10px;
+}
+
+.check__inpput {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Lucida Sans Unicode";
+  color: rgb(17, 65, 101);
+  line-height: 1.819;
+  color: #465961;
+}
+
+.check label {
+  padding-left: 14px;
+}
+
+.second_submit {
+  height: 24px;
+  width: 80px;
+  margin-left: 34px;
+  border: 0px solid;
+  border-radius: 13px;
+  font-size: 11px;
+  color: white;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+  background-image: -o-linear-gradient(top, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+  box-shadow: 3px 4px 7px -2px rgba(0,0,0,0.75);
+}
 
   .brands {
     width: 678px;
