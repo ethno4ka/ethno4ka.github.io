@@ -595,10 +595,10 @@
 
   .brands {
     width: 678px;
-    height: 90px;
+    height: 13px;
     display: flex;
     justify-content: space-between;
-    margin: 25px auto;
+    margin: 38px 116px;
   }
 
   .brands a {
@@ -606,12 +606,11 @@
   }
 
   footer {
-    width: 100%;
+    width: 908px;
     height: 100px;
     display: inline-flex;
-    align-content: flex-start;
     flex-flow: column;
-    padding-top: 12px;
+    padding-top: 11px;
     background-color: #213a4d;
     border-top: 1px solid #242c3e;
     border-right: 1px solid #242a3c;
