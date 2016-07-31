@@ -36,7 +36,7 @@
     border-radius: 4px;
     position: relative;
     display: inline-block;
-    left: 11px;
+    left: 12px;
     top: -5px;
     box-shadow: 3px 3px 11px -5px #000;
   }
@@ -59,10 +59,11 @@
     height: 10px;
     font-size: 11px;
     padding-left: 5px;
+    margin-left: 2px;
   }
 
   .first-field{
-    margin-left: 26px;
+    margin-left: 24px;
   }
 
   .header-text{
@@ -75,7 +76,11 @@
     border: none;
     cursor: pointer;
     text-decoration: none;
-    margin-left: -2px;
+    margin-left: -3px;
+  }
+
+  .header-text:hover {
+    text-decoration: underline;
   }
   
   .header-text-one{
@@ -101,15 +106,24 @@
     letter-spacing: 0;
   }
 
+  #header-text-two:hover {
+    text-decoration: none;
+  }
+
   .icons{
-    width: 75px;
-    height: 19px;
+    width: 76px;
+    height: 20px;
     border: 1px solid #c1c8cb;
     border-radius: 10px;
     display: inline-block;
     position: absolute;
-    margin-left: 24px;
+    margin-left: 28px;
     margin-top: 18px;
+    box-shadow: 1px 2px 7px 0px rgba(189,196,199,1);
+  }
+
+  .icons a {
+    text-decoration: none;
   }
 
   .icons-img-one{
@@ -125,8 +139,10 @@
   }
 
   .header-bg{
-    margin-left: 2px;
-    margin-top: 5px;
+    background: url(../img/header-bg.jpg)no-repeat;
+    height: 237px;
+    width: 908px;
+    margin: 5px 0px 5px 1px;
   }
 
   .header-text-logo{
@@ -204,6 +220,12 @@
     border-radius: 13px;
   }
 
+  .second-menu-link{
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+  }
+
   .second-menu{
     position: relative;
     font-family: Lucida Sans Unicode, Arial;
@@ -216,7 +238,7 @@
 
   .header-menu-spoint{
     display: inline-block;
-    margin-right: 13px;
+    margin-right: 10px;
   }
 
   .second-menu:before{
@@ -232,6 +254,7 @@
   .blue-text{
     font-size: 12px;
     color: #0d5a8f;
+    margin-left: 2px;
   }
 
   .blue-text-right{
@@ -337,14 +360,16 @@
   }
   
   .search_link {
-    font-size: 14px;
-    font-family: "Arial";
-    color: rgb(21, 68, 103);
+    font: 14px Arial, Tahoma, sans-serif;
+    color: #154467;
     font-style: italic;
-    line-height: 2;
-    position: absolute;
-    left: 343px;
-    top: 100.989px;
+    text-decoration: underline;
+    float: right;
+    margin-right: 25px;
+    background: none;
+    margin: -90px 14px 0px 4px;
+    cursor: pointer;
+    border: none;
   }
   
   .left_menu_C {
@@ -468,6 +493,15 @@
     display: inline-block;
     margin: 0 20px 0 0;
     padding: 0 0 0 20px;
+  }
+
+  .item a:hover p{
+  color: #b11400;
+  }
+
+  .wheels-img a {
+    text-decoration: none;
+    color: inherit;
   }
 
   .p-img{
@@ -595,6 +629,10 @@
     text-decoration: none;
   }
   
+  footer li a:hover {
+   color: #52abcb;     
+  }
+
   footer div {
     margin: 12px auto;
     color: #7f4740;
